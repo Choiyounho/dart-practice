@@ -29,6 +29,14 @@ void main() {
   for (int i = 0; i < 5; i++) {
     print("현재: $i");
   }
+
+  var list = [0, 1, 2, 3, 4, 5];
+
+  print("");
+  print("리스트로 반복문");
+  for (final index in list) {
+    print("현재: $index");
+  }
 }
 
 int add(int num1, int num2) {
