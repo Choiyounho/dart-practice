@@ -37,6 +37,20 @@ void main() {
   for (final index in list) {
     print("현재: $index");
   }
+
+  dynamic isRunning = true;
+  dynamic count = 0;
+
+  while (isRunning) {
+    if (count >= 3) {
+      isRunning = false;
+      print('끝');
+      break;
+    }
+
+    count++;
+    print('Running ...');
+  }
 }
 
 int add(int num1, int num2) {
