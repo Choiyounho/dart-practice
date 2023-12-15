@@ -51,6 +51,11 @@ void main() {
     count++;
     print('Running ...');
   }
+
+  do {
+    count++;
+    print('Running ...');
+  } while (count < 5);
 }
 
 int add(int num1, int num2) {
