@@ -56,6 +56,24 @@ void main() {
     count++;
     print('Running ...');
   } while (count < 5);
+
+  var num = 10;
+  try {
+    print(num ~/ 0);
+  } on UnsupportedError catch(error, stack) {
+    print("UnsupportedError");
+    print(error);
+    print(stack);
+  } on TypeError catch(_) {
+    print("따로 처리 안 함");
+  } catch (error, stack) {
+    print("catch");
+    print(error);
+    print(stack);
+    rethrow; // rethrow 사용 시 현재 함수 자체 밖으로 벗어나게됨
+  } finally {
+    print("예외처리 종료");
+  }
 }
 
 int add(int num1, int num2) {
