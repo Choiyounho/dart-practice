@@ -25,6 +25,10 @@ void main() {
     default:
       print("그 외 다른 조건들");
   }
+
+  for (int i = 0; i < 5; i++) {
+    print("현재: $i");
+  }
 }
 
 int add(int num1, int num2) {
